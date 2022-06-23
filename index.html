@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PXE|DRDO</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="cal-dir.css" /> -->
+    <script src="index.js"></script>
+    
+    
+  </head>
+  <body>
+    <header>
+      <section class="section-1">
+        <div class="left">
+          <ul class="date-time">
+            <li id="Today's_date" title="Date">00-00-0000</li>
+            <li id="clock" title="Current time">00:00:00 AM</li>
+          </ul>
+        </div>
+
+        <div class="mid">
+          <button class="top-mid" type="button" title="Increse font size">A+</button>
+          <button class="top-mid" type="button" title="Decrese font size">A-</button>
+          <button class="top-mid" type="button" title="Change language to Hindi">हिन्दी</button>
+        </div>
+
+        <div class="right">
+          <form class="navbar-form navbar-left" action="/action_page.php">
+            <input type="text" class="form-control" placeholder=" &nbsp;&nbsp;Search" />
+          </form>
+
+          <button id="serach" type="button">
+            <i class="fa fa-search" style="font-size: 24px"></i>
+          </button>
+
+          <button class="login" type="button">
+            <i class="fa fa-sign-in" aria-hidden="true"></i> Login
+          </button>
+        </div>
+      </section>
+
+      <section class="section-2">
+        <div class="logo">
+          <img src="ashok.png" alt="Ashok-Stambha" width="50" height="70" />
+        </div>
+        <div class="vl"></div>
+        <div class="div logo2">
+          <img src="logo-pxe.png" alt="PXE logo" width="90" />
+        </div>
+
+        <div class="gif">
+          <img src="pxe-gif.gif" alt="funny animation GIF" height="80" />
+        </div>
+      </section>
+
+
+      <section class="section-3">
+
+      <nav class="navbar">
+
+        <div id="toggle-btn">
+          <label for="toggle">
+            <i class="fa fa-bars">
+
+            </i>
+          </label>
+        </div>
+        <input type="checkbox" id="toggle">
+        <ul >
+          <li><a href="index.html"> HOME</i></a></li>
+          <li><a href="#">ORGANISATION CHART</a></li>
+          <li><a href="#">INFORMATION SECURITY</a></li>
+          <li><a href="#">STATIC FORMS</a></li>
+          <li><a href="#">MET INFO. & PREDICTION SYSTEM</a></li>
+          <li><a href="#">PWC CANTEEN MENU</a></li>
+          
+          <li><a ref="#">INTEGRATED MATS MANAGEMENT <i class="fa fa-caret-down" style="font-size:17px;color: white;"></i></a>
+            <ul>
+                <li><a href="#">PURCHASE MANAGEMENT</a></li>
+                <li><a href="#">IMM SOFTWARE</a></li>
+            </ul>
+          </li>
+          <li><a href="#">ISO 9001:2015 <i class="fa fa-caret-down" style="font-size:17px;color: white;"></i></a>
+            <ul>
+                <li><a href="#">OMSP</a></li>
+                <li><a href="#">CERTIFICATE</a></li>
+                <li><a href="#">PROCESSES</a></li>
+            </ul>
+          </li>
+          <li><a href="#">TELEPHONE DIRECTORY <i class="fa fa-caret-down" style="font-size:17px;color: white;"></i></a>
+            <ul>
+                <li><a href="#">PXE EMPLOYEE SERACH</a></li>
+                <li><a href="#">PXE TABLE TOP</a></li>
+                <li><a href="#">DRDO DIRECTORY</a></li>
+                <li><a href="#">DRDO GUEST HOUSE</a></li>
+            </ul>
+        </li>
+          <li><a href="#">MY LIBRARY <i class="fa fa-caret-down" style="font-size:17px;color: white;"></i></a>
+            <ul>
+                <li><a href="#">BOOK SEARCH</a></li>
+                <li><a href="#">DIGITAL COLLECTION</a></li>
+                </ul>
+        </li>
+        </ul>
+      </nav>
+    </section>
+      
+    </header>
+
+    <div class="main">
+      
+      <!-- Carousel -->
+      
+      <div class="cal-body">
+        <div class="calendar">
+          <div class="calendar-header">
+            <span class="month-picker" id="month-picker">February</span>
+            <div class="year-picker">
+              <span class="year-change" id="prev-year">
+                <p><</p>
+              </span>
+              <span id="year">2021</span>
+              <span class="year-change" id="next-year">
+                <p>></p>
+              </span>
+            </div>
+          </div>
+          <div class="calendar-body">
+            <div class="calendar-week-day">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="calendar-days"></div>
+          </div>
+  
+          <div class="month-list"></div>
+        </div>
+  
+        <div class="dir">
+          <div class="dir-up-row">
+            <div class="dir-img">
+              <a href="C:\Users\ANKIT\Desktop\PXE\director's-profile.html" target="_blank"><img
+                id="dir-dp"
+                src="./director.jpg"
+                alt="director-photo"
+                style="border-radius: 50%"
+                height="100px;"
+                width="100px;"
+                
+              /></a>
+            </div>
+  
+            <div class="dir-name">Sri. DK Joshi, Sc. 'G'</div>
+  
+            <div class="dir-deg">
+              Director, Proof &amp; Experimental Establishment (PXE)
+            </div>
+          </div>
+  
+          <div class="dir-down-row">
+            <br />
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sri. DK Joshi, Sc. 'G' assumed the charge of Director w.e.f. 1st Apr
+              2018. He is a Post-graduate in Applied Mathematics from Pune
+              University. His area of specialisation is
+              Armament-Ballistics.Initially, he served as a lecturer in
+              Mathematics at JSM College, Alibag, Raigad District, Maharastra.
+            </p>
+            
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After undergoingone year “Fellowship course in Ballistics & Space
+              Mechanics” at Institute of Armament Technology (IAT, now DIAT),he joined as Scientist ‘B’ in DRDO at ARDE, Pune in June 1987.   <a
+                href="C:\Users\ANKIT\Desktop\PXE\director's-profile.html"
+                style="text-decoration:none; color: rgb(74, 165, 250);"  target="_blank">Read more</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <script src="calendar.js"></script>
+      </div>
+      </div>
+
+
+
+  </body>
+</html>
