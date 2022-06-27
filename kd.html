@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex mx-4">
+                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">LOGIN/SIGN UP</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">WELCOME TO PXE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">START YOUR JOURNEY IN PXE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label"> Confirm Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">I agree to all the terms and
+                                conditions.</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./IMG20201019105017.jpg" class="d-block w-100" alt=""
+                    style="height:720px ;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:yellowgreen">Yesterday</h3 style="color:yellowgreen">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./IMG20201019105337.jpg" class="d-block w-100" alt=""
+                    style="height:720px ;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:yellowgreen">2Seater</h3 style="color:yellowgreen">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./IMG20201019105900.jpg" class="d-block w-100" alt=""
+                    style="height:720px ;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:yellowgreen">Fucking Young ? Perfect</h3 style="color:yellowgreen">
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./IMG20201019112940.jpg" class="d-block w-100" alt=""
+                    style="height:720px ;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 style="color:yellowgreen">Cash In Cash Out</h3 style="color:yellowgreen">
+
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div class="row my-2" data-masonry="{&quot;percentPosition&quot;: true }"
+        style="position: relative; height: 690.4px;">
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="card mx-1">
+                <img src="./images/ariyan-dv-2dR_Ym54NLE-unsplash.jpg" width="100%" height="200"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+
+                <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"
+                    style="text-align: center;">
+                    <h4>Director Name</h4>
+                </text>
+
+                <div class="card-body">
+                    <h5 class="card-title">Director's Message</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus
+                        dicta neque molestias vero adipisci quo, cum aut blanditiis deleniti dolores amet ullam
+
+
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6647%; top: 0px;">
+            <div class="card">
+                <img src="./images/yohann-libot-pRUdOHLEmsQ-unsplash.jpg" width="100%" height="200"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+
+                <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"
+                    style="text-align: center;">Love/Lust</text>
+
+                <div class="card-body">
+                    <h5 class="card-title">Touch</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed, maiores
+                        reiciendis ab animi ad fugit minima assumenda officiis quia deserunt quibusdam tempora vero id
+                        praesentium.
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last updated</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6647%; top: 0px;">
+            <div class="card">
+                <img src="./images/xuan-nguyen-jAke8NofTtE-unsplash.jpg" width="100%" height="200"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"
+                    style="text-align: center;">Sweat</text>
+                </svg>
+
+                <div class="card-body">
+                    <h5 class="card-title">Fight</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, illo
+                        voluptatibus quas qui provident nihil, nulla placeat nam ab expedita, alias fugit ea totam odio.
+                        A quam esse eaque ad?
+                    </p>
+                    <p class="card-text"><small class="text-muted">Last fight</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3323%; top: 171px;">
+            <div class="card bg-dark text-white text-center p-3 mx-1">
+                <figure class="mb-0">
+                    <blockquote class="blockquote">
+                        <p>The more you sweat in peace, the less you bleed in war.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-white">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 362px;">
+            <div class="card">
+                <img src="./images/specna-arms-BHtfQxJJBbE-unsplash.jpg" width="100%" height="260"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em"
+                    style="text-align: center;">Brothers In Arms</text>
+                </svg>
+
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6647%; top: 378.2px;">
+            <div class="card p-3 text-end">
+                <figure class="mb-0">
+                    <blockquote class="blockquote">
+                        <p>“Selling my soul would be a lot easier if I could just find it.”</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer mb-0 text-muted">
+                        Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3323%; top: 488.2px;">
+            <div class="card mx-1">
+                <div class="card-body">
+                    <h5 class="card-title">drugs</h5>
+                    <p class="card-text">Jo sune meri rap teri bandi bole fill my gap</p>
+                    <p class="card-text"><small class="text-muted">Young kd</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="p-5 mb-4 bg-warning rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-5 fw-bold">SHIT'S ON FIRE</h1>
+            <p class="col-md-0 fs-3">Bodies start to drop, ayy, hit the floor
+                Now they wanna know me since I hit the top, ayy
+                This a Rollie, not a stopwatch, shit don't ever stop
+                This the flow that got the block hot, shit got super hot, ayy
+                Give me my respect, give me my respect
+                I just took it left like I'm ambidex'</p>
+            <button class="btn btn-primary btn-lg" type="button">click me</button>
+        </div>
+    </div>
+    <div class="row align-items-md-stretch">
+        <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3 mx-2">
+                <h2>WORK</h2>
+                <p>No time to have you lurking
+                    Him ah go act like he nuh like it
+                    You know I dealt with you the nicest
+                    Nuh body touch me you nuh righteous
+                    Nuh badda, text me in a crisis
+                    I believed all of your dreams, adoration
+                    You took my heart and my keys and my patience
+                    You took my heart on my sleeve for decoration
+                    You mistaken my love I brought for you for foundation
+                    All that I wanted from you was to give me
+                    Something that I never had</p>
+                <button class="btn btn-outline-light" type="button">read more</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="h-100 p-5 bg-success border rounded-3 mx-2">
+                <h2>HOTLINE</h2>
+                <p>You used to call me on my cell phone
+                    Late night when you need my love
+                    Call me on my cell phone
+                    Late night when you need my love
+                    And I know when that hotline bling
+                    That can only mean one thing
+                    I know when that hotline bling
+                    That can only mean one thing</p>
+                <button class="btn btn-outline-primary" type="button">read more</button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/masonry.pkgd.min.js"></script>
+</body>
+
+</html>
