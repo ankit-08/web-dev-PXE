@@ -50,7 +50,7 @@ footer .social_icon li a{
 footer .social_icon li a:hover{
     transform: translateY(-10px);
 }
-footer .menu li{
+footer .menu li a{
     font-size: 1.2em;
     color: #fff;
     margin: 0 10px;
@@ -58,7 +58,7 @@ footer .menu li{
     text-decoration: none;
     opacity: 0.75;
 }
-footer .menu li:hover{
+footer .menu li a:hover{
     opacity: 1;
 }
 footer p{
