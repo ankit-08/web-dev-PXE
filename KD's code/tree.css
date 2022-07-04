@@ -41,7 +41,7 @@ body {
 .tree li::after{
     right: auto;
     left: 50%;
-	border-left: 2px solid rgb(255, 255, 255);
+	border-left: 2px solid rgb(240, 7, 7);
 }
 .tree li:only-child::after, .tree li:only-child::before {
 	display: none;
@@ -53,7 +53,7 @@ body {
 	border: 0 none;
 }
 .tree li:last-child::before {
-	border-right: 2px solid rgb(255, 255, 255);
+	border-right: 2px solid rgb(180, 11, 11);
 	border-radius: 0 5px 0 0;
 	-webkit-border-radius: 0 5px 0 0;
 	-moz-border-radius: 0 5px 0 0;
@@ -92,7 +92,7 @@ body {
 .tree li a span {
 	border: 2px solid #ccc;
 	border-radius: 5px;
-	color: rgb(244, 184, 5);
+	color: rgb(151, 223, 159);
 	padding: 8px;
 	font-size: 12px;
 	text-transform: uppercase;
@@ -101,8 +101,8 @@ body {
 }
 /*Hover-Section*/
 .tree li a:hover, .tree li a:hover i, .tree li a:hover span, .tree li a:hover+ul li a {
-	background: #3e4003;
-	color: rgb(13, 25, 244);
+	background: #66d4ff;
+	color: rgb(6, 9, 66);
 	border: 2px solid #94a0b4;
 }
 .tree li a:hover+ul li::after, .tree li a:hover+ul li::before, .tree li a:hover+ul::before, .tree li a:hover+ul ul::before {
